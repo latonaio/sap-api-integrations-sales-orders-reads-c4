@@ -93,8 +93,8 @@ func (c *SAPAPICaller) AsyncGetSalesOrders(iD string, accepter []string) {
 
 ## Output  
 本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
-以下の sample.json の例は、SAP キャンペーン  の キャンペーンデータ が取得された結果の JSON の例です。  
-以下の項目のうち、"ObjectID" ～ "CampaignInboundBusinessTransactionDocumentReference" は、/SAP_API_Output_Formatter/type.go 内 の Type CampaignCollection {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
+以下の sample.json の例は、SAP 受注  の 顧客受注データ が取得された結果の JSON の例です。  
+以下の項目のうち、"ObjectID" ～ "CustomerOrderParty" は、/SAP_API_Output_Formatter/type.go 内 の Type CustomerOrderCollection {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
